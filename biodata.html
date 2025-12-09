@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bio-Data — Prajwal Rajanna</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* small inline safety rules in case styles.css misses them */
+    .profile-centered { display:block; width:140px; height:140px; object-fit:cover; border-radius:12px; margin:0 auto 12px; border:6px solid rgba(255,255,255,0.6); }
+    .biodata-table.professional { width:100%; border-collapse:collapse; background:linear-gradient(180deg,#fffaf9,#fffefc); border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(12,20,40,0.06); border:1px solid rgba(11,95,255,0.04); }
+    .biodata-table.professional thead tr { background:linear-gradient(90deg,#f5f9ff,#fff3f2); }
+    .biodata-table.professional th { padding:12px 14px; text-align:left; font-weight:700; color:#0b3a66; border-bottom:1px solid rgba(11,95,255,0.06); }
+    .biodata-table.professional td { padding:12px 14px; vertical-align:top; border-bottom:1px solid #f0f6fb; color:#122434; }
+    .biodata-table.professional td:first-child { width:180px; font-weight:700; color: #052042; }
+    @media (max-width:720px){
+      .biodata-table.professional, .biodata-table.professional thead, .biodata-table.professional tbody, .biodata-table.professional tr, .biodata-table.professional th, .biodata-table.professional td { display:block; width:100%; }
+      .biodata-table.professional thead { display:none; }
+      .biodata-table.professional tr { margin-bottom:12px; border-bottom:1px dashed #eef6ff; padding-bottom:8px; }
+      .biodata-table.professional td { display:block; padding:6px 0; }
+      .biodata-table.professional td:first-child { width:auto; }
+    }
+  </style>
+</head>
+
+<body class="page-bg">
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- left: small photo only -->
+      <div class="brand">
+        <img src="profile.png" alt="Profile photo" class="small" />
+      </div>
+
+      <!-- center: title -->
+      <div style="text-align:center;flex:1">
+        <h1 style="color:white;margin:0;font-size:22px">BIO-DATA</h1>
+      </div>
+
+      <!-- right: navigation -->
+      <nav class="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="resume.html" class="nav-link">RESUME</a>
+        <a href="biodata.html" class="nav-link active">BIO-DATA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="margin-top:18px;">
+    <!-- profile card centered (small) -->
+    <aside class="card alt" style="max-width:340px;margin:0 auto 20px;text-align:center">
+      <img src="profile.png" alt="Profile" class="profile-centered" />
+      <p style="margin:6px 0 0;font-weight:700">PRAJWAL RAJANNA</p>
+      <p style="margin:4px 0 8px;color:var(--muted)">Computer Science • VTU</p>
+      <div style="margin-top:8px">
+        <a class="btn" href="Praj_resume.pdf" download>Download Resume PDF</a>
+      </div>
+    </aside>
+
+    <!-- biodata card with professional table -->
+    <section class="card section" style="max-width:1000px;margin:0 auto">
+      <h2>Personal Information</h2>
+
+      <table class="biodata-table professional" aria-label="Personal Information">
+        <thead>
+          <tr><th>Field</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Name</td><td>Prajwal Rajanna</td></tr>
+          <tr><td>Sex</td><td>Male</td></tr>
+          <tr><td>Date of Birth</td><td>21 April 2005</td></tr>
+          <tr><td>Phone</td><td>+91 8431556976</td></tr>
+          <tr><td>Email</td><td><a href="mailto:prajwal.r3501@gmail.com">prajwal.r3501@gmail.com</a></td></tr>
+          <tr><td>Address</td><td>R.T Nagar, Bangalore-32</td></tr>
+          <tr><td>Nationality</td><td>Indian</td></tr>
+          <tr><td>Marital Status</td><td>Single</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:18px">Family Details</h3>
+      <table class="biodata-table professional" aria-label="Family Details" style="margin-top:8px">
+        <tbody>
+          <tr><td>Father's Name</td><td>Dr. Rajanna M</td></tr>
+          <tr><td>Mother's Name</td><td>Shobha R</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:18px">Strengths</h3>
+      <ul class="list">
+        <li>Eager to learn new things</li>
+        <li>Positive attitude</li>
+        <li>Good communication skills</li>
+        <li>Takes responsibility</li>
+      </ul>
+
+      <h3 style="margin-top:18px">Declaration</h3>
+      <p style="margin-top:6px">I hereby declare that the information given above is true to the best of my knowledge and belief.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Printable bio-data. Use the browser Print (Ctrl/Cmd+P) to export as PDF.</div>
+  </footer>
+</body>
+</html>
